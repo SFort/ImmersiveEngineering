@@ -605,7 +605,6 @@ public class ClientProxy extends CommonProxy
 		List<PositionedItemStack[]> tempRecipeList;
 		List<IManualPage> pages;
 
-		addChangelogToManual();
 
 		ManualHelper.addEntry("introduction", ManualHelper.CAT_GENERAL,
 				new ManualPages.Text(ManualHelper.getManual(), "introduction0"),
