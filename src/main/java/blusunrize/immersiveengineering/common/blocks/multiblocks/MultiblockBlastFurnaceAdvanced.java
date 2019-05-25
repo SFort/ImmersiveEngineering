@@ -44,7 +44,7 @@ public class MultiblockBlastFurnaceAdvanced implements IMultiblock
 			for(int l = 0; l < 3; l++)
 				for(int w = 0; w < 3; w++)
 					if(h==3&&w==1&&l==1)
-						structure[h][l][w] = new ItemStack(Blocks.HOPPER);
+						structure[h][l][w] = new ItemStack(Blocks.IRON_BARS);
 					else if(h < 3)
 						structure[h][l][w] = new ItemStack(IEContent.blockStoneDecoration, 1, BlockTypes_StoneDecoration.BLASTBRICK_REINFORCED.getMeta());
 	}
@@ -116,7 +116,7 @@ public class MultiblockBlastFurnaceAdvanced implements IMultiblock
 					{
 						if(h==2)
 						{
-							if(!Utils.isBlockAt(world, pos.add(xx, h, zz), Blocks.HOPPER, -1))
+							if(!Utils.isBlockAt(world, pos.add(xx, h, zz), Blocks.IRON_BARS, -1))
 								return false;
 						}
 						else
@@ -152,7 +152,7 @@ public class MultiblockBlastFurnaceAdvanced implements IMultiblock
 		return true;
 	}
 
-	static final IngredientStack[] materials = new IngredientStack[]{new IngredientStack(new ItemStack(IEContent.blockStoneDecoration, 27, BlockTypes_StoneDecoration.BLASTBRICK_REINFORCED.getMeta())), ApiUtils.createIngredientStack(Blocks.HOPPER)};
+	static final IngredientStack[] materials = new IngredientStack[]{new IngredientStack(new ItemStack(IEContent.blockStoneDecoration, 27, BlockTypes_StoneDecoration.BLASTBRICK_REINFORCED.getMeta())), ApiUtils.createIngredientStack(Blocks.IRON_BARS)};
 
 	@Override
 	public IngredientStack[] getTotalMaterials()

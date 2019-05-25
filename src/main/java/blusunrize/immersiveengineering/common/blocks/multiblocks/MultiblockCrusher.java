@@ -71,7 +71,7 @@ public class MultiblockCrusher implements IMultiblock
 							structure[h][l][w] = new ItemStack(IEContent.blockMetalDecoration1, 1, BlockTypes_MetalDecoration1.STEEL_FENCE.getMeta());
 					}
 					else if(h==2)
-						structure[h][l][w] = new ItemStack(Blocks.HOPPER);
+						structure[h][l][w] = new ItemStack(Blocks.IRON_BARS);
 				}
 	}
 
@@ -242,7 +242,7 @@ public class MultiblockCrusher implements IMultiblock
 					}
 					else if(h==1)
 					{
-						if(!Utils.isBlockAt(world, pos, Blocks.HOPPER, -1))
+						if(!Utils.isBlockAt(world, pos, Blocks.IRON_BARS, -1))
 							return false;
 					}
 				}
@@ -254,7 +254,7 @@ public class MultiblockCrusher implements IMultiblock
 			new IngredientStack(new ItemStack(IEContent.blockMetalDecoration0, 1, BlockTypes_MetalDecoration0.RS_ENGINEERING.getMeta())),
 			new IngredientStack(new ItemStack(IEContent.blockMetalDecoration0, 10, BlockTypes_MetalDecoration0.LIGHT_ENGINEERING.getMeta())),
 			new IngredientStack("fenceSteel", 8),
-			new IngredientStack(new ItemStack(Blocks.HOPPER, 9))};
+			new IngredientStack(new ItemStack(Blocks.IRON_BARS, 9))};
 
 	@Override
 	public IngredientStack[] getTotalMaterials()
